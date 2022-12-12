@@ -1,3 +1,11 @@
+[project]
+name = "dsac"
+description = "DSAC algorithm"
+version = "0.1.0"
+authors = [
+    { name = "Peter Seres", email = "peter.seres.ae@gmail.com" }
+]
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
