@@ -10,7 +10,7 @@ from collections import deque
 from typing import Deque
 
 
-@dataclass(slots=True)
+@dataclass()
 class EpisodeData:
     """Uses deque and slots for efficiency. to_pandas converts it into a pd.DataFrame."""
 
