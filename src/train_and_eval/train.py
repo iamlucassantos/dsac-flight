@@ -1,7 +1,7 @@
 import numpy as np
 import tqdm
 from agents import BaseAgent
-from environments.env_phlab import PhlabEnv
+# from environments.env_phlab import PhlabEnv
 from environments.episode_data import EpisodeData
 from data_management.log_manager import LogManager
 from utils import torchify
@@ -9,7 +9,7 @@ from utils import torchify
 
 def train(
     n_episodes: int,
-    env: PhlabEnv,
+    env,
     agent: BaseAgent,
     log_manager: LogManager,
 ):
@@ -43,7 +43,7 @@ def train(
 
 
 def train_single_episode(
-    env: PhlabEnv, agent: BaseAgent
+    env, agent: BaseAgent
 ) -> (EpisodeData, float, float):
 
     """Returns the (episode data object, end-of-episode return, wall-clock training time)"""
